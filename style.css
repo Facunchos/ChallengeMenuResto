@@ -99,10 +99,15 @@ header nav ul li a{
  .upperMain h2  {
      font-size: 35px;
      color: wheat;
+     font-family: 'Courier New', Courier, monospace;
  }
 
  .upperMain h3 {
     color: rgb(241, 199, 120);
+ }
+
+ .upperMain p {
+     
  }
 
  
