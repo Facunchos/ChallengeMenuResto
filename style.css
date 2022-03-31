@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.titulo-principal{
+    color: black;
+    font-family: hurricane;
+    font-size: 55px;
+    font-weight:1500;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://previews.123rf.com/images/nuttakit/nuttakit1206/nuttakit120600017/14122347-texture-of-old-wood-wall-for-web-page-background.jpg");
+    background-size: auto;
+}
+.desc-titulo{
+    color: rgba(22, 20, 20, 0.8);
+    font-size: 25px;
+    
+}
+
+header nav li {
+display: inline-block;
+padding: 10px;
+margin: 0 20px;
+font-size: 20px;
+color:white;
+transition: transform .2s;
+}
+
+header nav {
+    background-color:rgba(22, 20, 20, 0.5);
+}
+header nav ul li:hover {
+    
+    background-color:rgba(22, 20, 20, 0.6);
+    transform: scale(1.1);
+
+}
+header nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.tituloGeneral {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.content {
+    border:5px solid goldenrod ;
+    margin: 10px;
+    padding: 50px;
+}
+
+.titulo-menu {
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.titulo-menu h2 , .titulo-menu p {
+    margin: 0 10px;
+    font-size: 50px;
+    color:white;
+    
+}
+
+.titulo-menu p {
+    border: 1px solid black;
+    padding: 5px;
+
+}
+
+.upperMain {
+    display: flex;
+    justify-content: space-around;
+
+ }
+
+ .upperMain .right {
+     display: flex;
+     flex-direction: column;
+     border-left: 3px yellow solid;
+     padding-left: 30px;;
+ }
+
+ .upperMain h2  {
+     font-size: 35px;
+     color: wheat;
+ }
+
+ .upperMain h3 {
+    color: rgb(241, 199, 120);
+ }
+
+ 
+
+
+ 
+ 
+
+.upperMain h2{}
+.comida{
+    font-family: lobster;
+}
+.descripcion{
+    font-family: Satisfy;
+}
+
+
+
+
