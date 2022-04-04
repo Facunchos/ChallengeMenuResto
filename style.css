@@ -8,7 +8,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
@@ -114,8 +114,6 @@ header nav ul li a {
     display: flex;
     flex-direction: column;
     padding-left: 30px;
-    ;
-
 }
 
 .upperMain .left {
@@ -170,9 +168,7 @@ footer .footer_div {
     font-size: 15px;
 }
 
-.footer_div .lista li:hover {
-    background-color: rgba(0, 0, 0, 0.185);
-}
+
 
 .footer_div .lista li a {
     text-decoration: none;
@@ -231,4 +227,8 @@ h2 a {
     opacity: 0;
     overflow: hidden;
     transition: opacity 300ms ease;
+}
+.container-redes>ul{
+    display: flex;    
+    margin-bottom: 20px;
 }
