@@ -231,3 +231,9 @@ h2 a {
     display: flex;    
     margin-bottom: 20px;
 }
+.navBurgers{
+    color: #f9906f;
+}
+.navVegan{
+    color: #8ec298;
+}
