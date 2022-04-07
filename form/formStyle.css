@@ -1,0 +1,45 @@
+.form-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:30em;
+    border-top: 3px solid black;
+    margin: 1em;
+    padding: 2em;
+}
+.container_div{
+    display: flex;
+    justify-content: right;
+
+}
+
+
+
+.seccionContacto {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+
+
+}
+
+.seccionContacto .form_partes {
+    display:flex;
+    justify-content: center;
+}
+
+h4 {
+    place-self: start;
+}
+.form_partes input, textarea{
+    margin: 15px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+label{
+    display: inline-block;
+    width: 80px;
+  }
