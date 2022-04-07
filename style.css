@@ -240,3 +240,12 @@ h2 a {
 .imagenHome{
     width: 15em;
 }
+.navList{
+    display: flex;
+    height: 6em;
+}
+.navList img{
+    max-height: 100%;
+}
+.navList i{
+}
