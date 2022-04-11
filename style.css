@@ -24,6 +24,10 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -44,7 +48,7 @@ body {
 
 }
 
-header nav li {
+nav li {
     display: inline-block;
     padding: 10px;
     margin: 0 20px;
@@ -52,20 +56,24 @@ header nav li {
     transition: transform .2s;
 }
 
-header nav {
-    background-color: rgba(22, 20, 20, 0.5);
-    margin-bottom: 25px;
+nav {
+    background-color: black;
     overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-header nav ul li:hover {
+
+
+ nav ul li:hover {
 
     background-color: rgba(22, 20, 20, 0.6);
     transform: scale(1.1);
 
 }
 
-header nav ul li a {
+ nav ul li a {
     text-decoration: none;
     color: white;
 }
@@ -108,7 +116,7 @@ header nav ul li a {
 .upperMain {
     display: flex;
     justify-content: space-around;
-
+    width: 700px;
 }
 
 .upperMain .right {
