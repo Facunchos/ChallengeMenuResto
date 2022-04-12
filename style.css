@@ -199,6 +199,15 @@ article:hover {
     transform: scale(1.1);
 }
 
+.imagenHome {
+    transition: transform .2s;
+}
+
+.imagenHome:hover {
+    transform: scale(1.1);
+
+}
+
 
 .main_container {
     display: flex;

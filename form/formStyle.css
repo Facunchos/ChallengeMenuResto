@@ -52,6 +52,10 @@ ul li {
     list-style: none;
 }
 
+.seccion2 ul {
+    margin-bottom: 15px;
+}
+
 
 
 .btn {
