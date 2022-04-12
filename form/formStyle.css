@@ -1,9 +1,15 @@
 .form-container{
-
+    display: flex;
     width:50em;
     border-top: 3px solid black;
     margin: 1em 0;
     padding: 2em;
+    justify-content: space-evenly;
+}
+
+.seccionContacto {
+    width: 75%;
+    margin-right: 30px;
 }
 
 
@@ -34,6 +40,16 @@
 
 .form_partes input:focus, textarea:focus {
     background-color: rgba(6, 3, 3, 0.158);
+}
+
+.seccion2 {
+width:30% ;
+
+
+}
+
+ul li {
+    list-style: none;
 }
 
 
