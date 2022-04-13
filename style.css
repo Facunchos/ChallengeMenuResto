@@ -274,8 +274,20 @@ h2 a {
     visibility: hidden;
 }
 
-#input_chek, .left article:hover {
-    
+.tituloComida {
+    display: flex;
+}
+
+.tituloComida input {
+    width: 8%;
+    margin-left: 5px;
+    background-color: transparent;
+    border:none;
+    border:2px solid black;
+}
+
+.tituloComida input:hover{
+    border:3px solid black;
 }
 
 
