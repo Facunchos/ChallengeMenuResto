@@ -278,7 +278,7 @@ h2 a {
     display: flex;
 }
 
-.tituloComida input {
+.tituloComida input, #resumen_pago input {
     width: 8%;
     margin-left: 5px;
     background-color: transparent;
@@ -288,6 +288,20 @@ h2 a {
 
 .tituloComida input:hover{
     border:3px solid black;
+}
+
+#resumen_pago {
+    display: flex;
+    justify-content: end;
+}
+
+#resumen_pago p {
+    margin-right: 5px;
+}
+
+#resumen_pago input:hover {
+    background-color: black;
+    color:white;
 }
 
 
