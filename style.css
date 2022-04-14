@@ -38,6 +38,8 @@ body {
     font-family: 'Bebas Neue', cursive;
 }
 
+
+
 .desc-titulo {
     color: rgba(22, 20, 20, 0.8);
     font-size: 25px;
@@ -211,7 +213,7 @@ article:hover {
 
 .main_container {
     display: flex;
-    width: 700px;
+    width: 50em;
     height: 400px;
     justify-content: space-around;
     align-items: center;
@@ -222,7 +224,6 @@ article:hover {
 
 .main_container h2 {
     font-size: 50px;
-    border-bottom: 3px solid black;
     transition: transform .2s;
 }
 
