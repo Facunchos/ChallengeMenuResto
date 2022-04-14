@@ -288,6 +288,8 @@ h2 a {
 
 .tituloComida input:hover{
     border:3px solid black;
+    background-color: black;
+    color: white;
 }
 
 #resumen_pago {
