@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="formStyle.css">
-    <!-- <link rel="script" href="script.js"> -->
-    <title>Document</title>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -27,45 +26,31 @@
         </div>
     </header>
 
-    <form name="formulario_contacto" action="../burgers.html" class="form-container" method="post">
+    <form name="formulario_contacto"  class="form-container" >
 
         <section class="seccionContacto">
             <h1>Contactanos</h1>
             <div class="form_partes">
-                <input type="text" name="nombre" id="" placeholder="Nombre">
-                <input type="email" name="mail" id="email" required placeholder="Email">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <input type="email" name="mail" id="email" placeholder="Email">
             </div>
 
             <div class="form_partes">
-                <input type="tel" name="contacto" id="" placeholder="Contacto">
-                <input type="text" name="Asunto" id="" placeholder="Asunto">
+                <input type="number" name="contacto" id="celular" placeholder="Celular" onblur="validarTelefono()">
+                <input type="text" name="Asunto" id="asunto" placeholder="Asunto">
             </div>
             <div class = "tercerRenglon">
 
             
+                <h4>Tipo de comensal / dieta</h4>
 
             <div class="tercerRenglon_div"> 
-                <h4>Tipo de comensal / dieta</h4>
-                <label>Vegana<input type="checkbox" name="checkbox" value="Vegana" id="Vegana" onclick="romperAlgo(id)"></label>
-                <label>Omnivora<input type="checkbox" name="checkbox" value="Omnivora" id="Omnivora"onclick="romperAlgo(id)"></label>
-                    <label>Vegetariano<input type="checkbox" name="checkbox" value="Vegetariano"
-                        onclick="romperAlgo(id)" id="Vegetariano"></label>
+                <label>Vegana<input type="checkbox" name="checkbox" value="Vegana" class="opcion"></label>
+                <label>Omnivora<input type="checkbox" name="checkbox" value="Omnivora" class="opcion"></label>
+                <label>Vegetariano<input type="checkbox" name="checkbox" value="Vegetariano" class="opcion" onclick="clickCheckVegetariano()"></label>
 
             </div>
-                    <script>
-                        function romperAlgo(id) {
 
-                            if (id == 'Vegana') {
-                                console.log("anda?");
-                                
-                            }else{
-                                console.log("no es vegana");
-
-                            }
-
-                            // document.getElementById('')
-                        }
-                    </script>
             <h4></h4>
             <div class="tercerRenglon_div rango">
                 <h4>Rango edad</h4>
@@ -83,11 +68,8 @@
             <h4>Mensaje</h4>
 
             <textarea name="Mensaje" id="" cols="45" placeholder="Mensaje"></textarea>
-            <div class="buttons">
-
                 <button class="btn btn-primary" type="reset">Resetear texto</button>
-                <button class="btn btn-primary" type="submit">Enviar</button>
-            </div>
+                <button class="btn btn-primary" type="submit" onclick="validarFormulario()">Enviar</button>
         </section>
 
         <section class="seccion2">
