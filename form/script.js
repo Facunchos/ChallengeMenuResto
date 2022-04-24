@@ -1,46 +1,27 @@
 function validarFormulario() {
-    validarnombre();
-    validaremail();
-    validarAsunto();
-    validarComensal();
-
-    
-}
-
-function validarnombre(){
-    var nombre = document.getElementById('nombre');
-    if(nombre.value.length === 0){
-        alert("Error. Completá tu nombre")
-    }
-}
-
-function validaremail(){
-    var mail = document.getElementById('email');
-    if(nombre.value.length === 0){
-        alert("Error. Completá tu email")
-    }
-}
-
-function validarAsunto(){
-    var asunto = document.getElementById('asunto');
-    if(asunto.value.length === 0){
-        alert("Error. Completá tu asunto")
-    }
-}
-
-
-function validarTelefono(){
-    let telefono = document.getElementById('celular');
-
-    if(celular.value.length != 10){
-        alert('Error. Verificá que tu número de celular tengo 10 números');
-    }
-    
-}
-
-function validarComensal(){
+    let nombre = document.getElementById('nombre');
+    let asunto = document.getElementById('asunto');
+    let celular = document.getElementById('celular');
     let opciones = document.getElementsByClassName('opcion');
-   let cliceado = false;
+  
+
+    var mensajesError = [];
+    if(nombre.value.length === 0){ 
+        mensajesError.push('Error. Completá tu nombre <br>');
+    }
+
+   
+    if(asunto.value.length === 0){ 
+        mensajesError.push('Error. Completá tu asunto <br>');
+
+    }
+
+    if(celular.value.length != 10){ 
+        mensajesError.push('Error. Verificá que tu número de celular tengo 10 números <br>');
+
+    }
+
+    let cliceado = false;
     let i = 0;
 
     while(i < opciones.length){
@@ -51,6 +32,17 @@ function validarComensal(){
     }
 
     if(cliceado == false){
-        alert("Error. No hay tipo de comensal seleccionado");
+        mensajesError.push('Error. No hay tipo de comensal seleccionado');
+
     }
+
+    document.getElementById('errorDatos').innerHTML = mensajesError.join('');
+
 }
+
+function removerError() {
+    document.getElementById('errorDatos').innerHTML = "";
+}
+
+
+

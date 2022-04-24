@@ -1,4 +1,4 @@
-.form-container{
+#form-container{
     display: flex;
     width:50em;
     border-top: 3px solid black;
@@ -97,6 +97,10 @@ display: flex;
 
 .rango {
     margin-left: 50px;
+}
+
+#errorDatos {
+    color:red;
 }
 
 

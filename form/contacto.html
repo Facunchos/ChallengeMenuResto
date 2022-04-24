@@ -26,7 +26,7 @@
         </div>
     </header>
 
-    <form name="formulario_contacto"  class="form-container" >
+    <form name="formulario_contacto"  id="form-container" >
 
         <section class="seccionContacto">
             <h1>Contactanos</h1>
@@ -68,8 +68,9 @@
             <h4>Mensaje</h4>
 
             <textarea name="Mensaje" id="" cols="45" placeholder="Mensaje"></textarea>
-                <button class="btn btn-primary" type="reset">Resetear texto</button>
-                <button class="btn btn-primary" type="submit" onclick="validarFormulario()">Enviar</button>
+                <button class="btn btn-primary" type="reset" onclick="removerError()">Resetear texto</button>
+                <button class="btn btn-primary" type="button"  onclick="validarFormulario()">Enviar</button>
+                <div id="errorDatos"></div>
         </section>
 
         <section class="seccion2">
