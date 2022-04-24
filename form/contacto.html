@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="formStyle.css">
+    <!-- <link rel="script" href="script.js"> -->
     <title>Document</title>
 </head>
 
@@ -19,7 +20,7 @@
         </ul>
     </nav>
     <header>
-       
+
         <div class="tituloGeneral">
             <h1 class="titulo-principal">AL-T-INEZ BAR</h1>
             <h3 class="desc-titulo"> BURGERS & BEER </h3>
@@ -27,26 +28,66 @@
     </header>
 
     <form name="formulario_contacto" action="../burgers.html" class="form-container" method="post">
-        
+
         <section class="seccionContacto">
             <h1>Contactanos</h1>
             <div class="form_partes">
-            <input type="text" name="nombre" id="" placeholder="Nombre">
-            <input type="email" name="mail" id="email" required placeholder="Email">
+                <input type="text" name="nombre" id="" placeholder="Nombre">
+                <input type="email" name="mail" id="email" required placeholder="Email">
             </div>
 
             <div class="form_partes">
-                    <input type="tel" name="contacto" id="" placeholder="Contacto">
-                    <input type="text" name="Asunto" id="" placeholder="Asunto">
+                <input type="tel" name="contacto" id="" placeholder="Contacto">
+                <input type="text" name="Asunto" id="" placeholder="Asunto">
             </div>
-            <h4>Mensaje</h4>
-            
-            <textarea name="Mensaje" id="" cols="45" placeholder="Mensaje"></textarea>
-        <div class="buttons">
+            <div class = "tercerRenglon">
 
-            <button class="btn btn-primary" type="reset">Resetear texto</button>
-            <button class="btn btn-primary" type="submit">Enviar</button>
+            
+
+            <div class="tercerRenglon_div"> 
+                <h4>Tipo de comensal / dieta</h4>
+                <label>Vegana<input type="checkbox" name="checkbox" value="Vegana" id="Vegana" onclick="romperAlgo(id)"></label>
+                <label>Omnivora<input type="checkbox" name="checkbox" value="Omnivora" id="Omnivora"onclick="romperAlgo(id)"></label>
+                    <label>Vegetariano<input type="checkbox" name="checkbox" value="Vegetariano"
+                        onclick="romperAlgo(id)" id="Vegetariano"></label>
+
+            </div>
+                    <script>
+                        function romperAlgo(id) {
+
+                            if (id == 'Vegana') {
+                                console.log("anda?");
+                                
+                            }else{
+                                console.log("no es vegana");
+
+                            }
+
+                            // document.getElementById('')
+                        }
+                    </script>
+            <h4></h4>
+            <div class="tercerRenglon_div rango">
+                <h4>Rango edad</h4>
+                <select name="edad" id="">
+                    opto
+                    <option value="1">5 - 18</option>
+                    <option value="2">19 - 40</option>
+                    <option value="3">41 - 60</option>
+                    <option value="4">+60</option>
+                </select>
+
+            </div>
         </div>
+
+            <h4>Mensaje</h4>
+
+            <textarea name="Mensaje" id="" cols="45" placeholder="Mensaje"></textarea>
+            <div class="buttons">
+
+                <button class="btn btn-primary" type="reset">Resetear texto</button>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
         </section>
 
         <section class="seccion2">
@@ -59,16 +100,18 @@
             </ul>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa nesciunt quas at ducimus <br> quo minima iure eius, incidunt, ex molestias magni totam! Exercitationem ea perspiciatis nobis aut omnis <br> pariatur aliquid?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa nesciunt quas at ducimus <br> quo minima
+                iure eius, incidunt, ex molestias magni totam! Exercitationem ea perspiciatis nobis aut omnis <br>
+                pariatur aliquid?
             </p>
         </section>
 
-           
+
 
 
 
     </form>
- 
+
     <footer>
         <div class="footer_div">
 
@@ -76,8 +119,8 @@
                 <p>Seguinos para ver nuestros mas recientes proyectos!</p>
 
             </div>
-           
- 
+
+
 
             <div class="container-redes">
                 <p>Página creada por</p>

@@ -88,5 +88,18 @@ ul li {
     /* Agregarle espacio entre los botones ocn un space-between */
 }
 
+.tercerRenglon {
+display: flex;
+}
+.tercerRenglon_div {
+    width: 50%;
+}
+
+.rango {
+    margin-left: 50px;
+}
+
+
+
 
 
