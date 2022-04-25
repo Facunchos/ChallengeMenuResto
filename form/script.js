@@ -46,8 +46,27 @@ function validarFormulario() {
 }
 
 function removerError() {
-    document.getElementById('errorDatos').innerHTML = "";
+    document.getElementById('errorDatos').innerHTML = ""; 
 }
+
+
+function hacerClick(id){
+    let opciones = document.getElementsByClassName('opcion');
+    let opcionElegida = document.getElementById(id);
+
+
+    for (let i = 0; i < opciones.length; i++) {
+        if (opciones[i] !== opcionElegida) {
+            if(opciones[i].checked){
+                opciones[i].click();
+            }
+        }
+        
+    }
+}
+
+
+
 
 
 
