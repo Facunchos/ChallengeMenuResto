@@ -103,6 +103,15 @@ display: flex;
     color:red;
 }
 
+#botones {
+    display: flex;
+    justify-content: start;
+}
+
+#botones button {
+   margin-right: 5px;
+}
+
 
 
 

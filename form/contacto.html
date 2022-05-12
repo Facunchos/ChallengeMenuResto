@@ -32,11 +32,11 @@
             <h1>Contactanos</h1>
             <div class="form_partes">
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                <input type="email" name="mail" id="email" placeholder="Email">
+                <input type="email" name="mail" id="email" placeholder="Email" required>
             </div>
 
             <div class="form_partes">
-                <input type="number" name="contacto" id="celular" placeholder="Celular" onblur="validarTelefono()">
+                <input type="text" name="contacto" id="celular" placeholder="Celular">
                 <input type="text" name="Asunto" id="asunto" placeholder="Asunto">
             </div>
             <div class = "tercerRenglon">
@@ -68,8 +68,11 @@
             <h4>Mensaje</h4>
 
             <textarea name="Mensaje" id="" cols="45" placeholder="Mensaje"></textarea>
+            <button class="btn btn-primary" type="button"  onclick="validarFormulario()">Enviar</button>
                 <button class="btn btn-primary" type="reset" onclick="removerError()">Resetear texto</button>
-                <button class="btn btn-primary" type="button"  onclick="validarFormulario()">Enviar</button>
+               
+
+                
                 <div id="errorDatos"></div>
         </section>
 
